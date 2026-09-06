@@ -1533,3 +1533,109 @@ footer h3 {
     }
 
 }
+
+/* ===================================
+   DARK MODE
+=================================== */
+
+.theme-toggle {
+
+    border: none;
+
+    background: var(--light);
+
+    width: 42px;
+
+    height: 42px;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    color: var(--primary);
+
+    margin-left: 15px;
+
+}
+
+
+/* Dark Theme */
+
+body.dark-mode {
+
+    --white: #101817;
+    --light: #172121;
+    --dark: #f4f8f7;
+    --text: #b8c5c2;
+    --border: #2a3936;
+
+    background: var(--white);
+
+}
+
+
+body.dark-mode .navbar {
+
+    background: rgba(16, 24, 23, 0.92);
+
+}
+
+
+body.dark-mode .info-card,
+body.dark-mode .blog-card {
+
+    background: #172121;
+
+}
+
+
+body.dark-mode .contact-form {
+
+    background: #172121;
+
+}
+
+
+body.dark-mode .form-group input,
+body.dark-mode .form-group textarea {
+
+    background: #101817;
+
+    color: white;
+
+}
+
+.social-links {
+
+    display: flex;
+    gap: 12px;
+    margin-top: 18px;
+
+}
+
+.social-links a {
+
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 50%;
+
+    color: var(--white);
+
+    transition: 0.3s;
+
+}
+
+.social-links a:hover {
+
+    background: var(--secondary);
+    border-color: var(--secondary);
+
+    transform: translateY(-5px);
+
+}
